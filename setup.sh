@@ -152,7 +152,7 @@ fi
 ${PYTHON} -m pip install ${INSTALLFLAGS} --upgrade pip
 
 # Install Python dependencies
-${PYTHON} -m pip install ${INSTALLFLAGS} -Ur requirements.txt
+${PYTHON} -m pip install ${INSTALLFLAGS} -Ur requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # Load Pwndbg into GDB on every launch.
 if ! grep pwndbg ~/.gdbinit &> /dev/null; then
